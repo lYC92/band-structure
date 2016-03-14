@@ -22,7 +22,7 @@ W = [0.5 1 0]';
 K = [0.75 0.75 0.75]';
 intcp = 10;
 
-k = kpoints([L gama X W K gama],intcp);
+k = kpoints([L gama],intcp);
 
 %% Hamiltonian
 m = 9.11e-31;
@@ -44,8 +44,8 @@ for k_loop = 1:length(k)
     value(:,k_loop) = eig(H);
 end
 %%
-
-plot([1:51],value)
+clf
+plot([1:11],value(:,1:11))
 
 
 
