@@ -32,6 +32,8 @@ const = hbar*hbar/2/m/q;
 n = 125;
 H = zeros(n);
 middle = ceil(n/2);
+nbnd = 10;
+value = zeros(n,length(k));
 
 for k_loop = 1:length(k)
 
@@ -45,7 +47,7 @@ for k_loop = 1:length(k)
 end
 %%
 clf
-plot([1:11],value(:,1:11))
+plot(1:length(k),value)
 
 
 
