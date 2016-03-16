@@ -48,15 +48,3 @@ end
 %%
 clf
 plot(1:length(k),value)
-
-
-
-
-
-
-
-
-
-
-
-
